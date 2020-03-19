@@ -1,6 +1,10 @@
 // Write a function that takes user input and creates a password
 // based on that input and returns it
 function generatePassword() {
+    var lwrCase = "abcdefghijklmnopqrstuvwxyz"
+    var uprCase = "ABDCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var numChar = "1234567890"
+    var specChar = "!@#$%^&*?"
     /****
      * WRITE YOUR CODE HERE
      */
