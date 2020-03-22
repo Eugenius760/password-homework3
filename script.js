@@ -1,16 +1,21 @@
 // Write a function that takes user input and creates a password
 // based on that input and returns it
 function generatePassword() {
-    var lwrCase = "abcdefghijklmnopqrstuvwxyz"
-    var uprCase = "ABDCDEFGHIJKLMNOPQRSTUVWXYZ"
-    var numChar = "1234567890"
-    var specChar = "!@#$%^&*?"
+    var charCh = "abcdefghijklmnopqrstuvwxyzABDCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*?";
+
+    var password = ""
+
+    for (i = 0; i <= 8; i++) {
+        password = password + charCh.charAt(Math.floor(Math.random() * Math.floor(charCh.length - 1)));
+    }
+
+
     /****
      * WRITE YOUR CODE HERE
      */
-    alert("I am in generate password");
+    alert("Generate Password");
   
-    return "sometext";
+    return password;
   }
   
   //////////////////////////////////////////////////////////////
